@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>脳トレじゃんけん</title>
+    <link rel="stylesheet" type="text/css" href="sample.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="./timer.js" defer></script>
+    <script src="./score.js" defer></script>
+    <script src="./random.js" defer></script>
+    <script src="./key.js" defer></script>
+    <script src="./ranking.js" defer></script>
+  </head>
+
+  <body>
+
+		<div id="timer-area">
+			<button id="start-btn">START</button>
+			<div id="timer-content">
+				<p>残り時間：</p>
+				<p id="timer">10</p>
+				<p>秒</p>
+			</div>
+		</div>
+		<h1 id="order-content">お題</h1>
+		<div id="janken-area">
+			<div id="enemy-content"><img src="img/gu.jpg" id="enemy-hand"></div>
+			<ul id="myhand-content">
+				<li data-index="0"><img src="img/gu.jpg"></li>
+				<li data-index="1"><img src="img/cho.jpg"></li>
+				<li data-index="2"><img src="img/pa.jpg"></li>
+			</ul>
+		</div>
+		<div id="score-area">
+			<p>score：</p>
+			<p id="score">0</p>
+		</div>
+		<div id="ranking-area">
+			<div id=ranking-content>
+        <div id="regist-btn" class="btn" aria-disabled="true">ランキング登録</div>
+        <div id="reset-btn" class="btn">ランキングリセット</div>
+			</div>
+			<table id="rankingi-tb">
+        <thead>
+          <tr>
+            <th data-index="0">順位</th>
+            <th data-index="1">スコア</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-body">
+          <tr>
+            <td>1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+          </tr>
+        </tbody>
+
+			</table>
+		</div>
+	</body>
+</html>

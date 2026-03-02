@@ -1,0 +1,134 @@
+@charset"UTF-8";
+
+div {
+    /* border: solid; */
+    width:fit-content;
+}
+
+button {
+    height: 50px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+}
+
+body {
+    width: 900px;
+    margin: 10px auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+h1 {
+    text-align: center;
+    margin: auto 20%;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 30%); */
+    /* background: linear-gradient(315deg, #C9161E 20px, #FFF 20px); */
+}
+
+
+#order-content {
+    width: auto;
+    border: solid;
+    border-color: #2f528f;
+    background-color: #dae3f3;
+}
+
+#timer-area {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-items: right;
+}
+#timer-content {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+}
+
+#score-area {
+    display: flex;
+}
+
+#myhand-content {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    border: solid;
+    border-color: aqua;
+    border-color: #2f528f;
+}
+
+#janken-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score-area {
+    display: flex;
+    width: auto ;
+    justify-content: flex-end;
+    justify-items: right;
+}
+
+#ranking-content {
+    display: flex;
+}
+
+th {
+    width: 450px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(142, 135, 190);
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+
+thead > tr > th, 
+tbody > tr > th,
+thead > tr > td,
+tbody > tr > td {
+    border: 1px solid #ddd;
+}
+#ranking-content .btn {
+    display: block;
+    width: 450px;
+    height: 39px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 39px;
+}
+
+#ranking-content #regist-btn {
+    background-color: rgb(255, 152, 0);
+    top: 0;
+    right: 146px;
+}
+#ranking-content #regist-btn:hover {
+    background-color: rgba(255, 152, 0, 0.5);
+}
+#ranking-content #reset-btn {
+    background-color: rgb(255, 0, 0);
+    top: 0;
+    right: 146px;
+}
+#ranking-content #reset-btn:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#timer-area button {
+    background-color: #83C96A;
+}
+#timer-area button:hover {
+    background-color: rgb(131, 201, 106, 0.5);
+}
+
+#ranking-area {
+    margin: auto;
+}
